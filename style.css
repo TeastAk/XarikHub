@@ -558,18 +558,26 @@ h1, h2, h3, h4, h5, h6, p {
 @keyframes add {
 
   0% {
+    visibility: hidden;
+    opacity: 0;
     top: -100%;
   }
 
   20% {
+    visibility: visible;
+    opacity: 1;
     top: -50%;
   }
 
   60% {
+    visibility: visible;
+    opacity: 1;
     top: 0;
   }
 
   100% {
+    visibility: hidden;
+    opacity: 0;
     top: -100%;
   }
 

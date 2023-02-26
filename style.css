@@ -553,12 +553,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .active-roma {
   animation: add 5s;
+  visibility: hidden;
 }
 
 @keyframes add {
 
   0% {
-    visibility: hidden;
+    visibility: visible;
     opacity: 0;
     top: -100%;
   }

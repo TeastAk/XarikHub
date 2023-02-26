@@ -545,10 +545,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .roma {
   right: 0;
+  opacity: 0;
 }
 
 .daniil {
   left: 0;
+  opacity: 0;
 }
 
 .active-roma {
@@ -560,14 +562,8 @@ h1, h2, h3, h4, h5, h6, p {
 
   0% {
     visibility: visible;
-    opacity: 0;
-    top: -100%;
-  }
-
-  20% {
-    visibility: visible;
     opacity: 1;
-    top: -50%;
+    top: -120%;
   }
 
   60% {
@@ -579,7 +575,7 @@ h1, h2, h3, h4, h5, h6, p {
   100% {
     visibility: hidden;
     opacity: 0;
-    top: -100%;
+    top: -120%;
   }
 
 }

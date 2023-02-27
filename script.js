@@ -20,5 +20,7 @@ button.addEventListener('click', (e) => {
     if(inp.value === 'defix') {
         butLink.classList.remove('none')
     }
+    
+    inp.value = '';
 
 });

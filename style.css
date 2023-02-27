@@ -579,3 +579,84 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
 }
+
+/* game */
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.solid {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/video/game1.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+#cactus {
+  width: 28px;
+  height: 40px;
+  background-image: url(./img/video/cactus.png);
+  background-size: 28px 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+
+  animation: cactusMov 1s infinite linear;
+}
+
+@keyframes cactusMov {
+  0% {
+      left: 580px;
+  }
+
+  100% {
+      left: -20px;
+  }
+}
+
+.jump {
+  animation: jump .3s linear;
+}
+
+@keyframes jump {
+  0% {
+      top: 150px;
+  }
+
+  30% {
+      top: 130px;
+  }
+
+  50% {
+      top: 80px;
+  }
+
+  80% {
+      top: 130px;
+  }
+  
+  100% {
+      top: 150px;
+  }
+}
+
+.none {
+  display: none;
+}
+
